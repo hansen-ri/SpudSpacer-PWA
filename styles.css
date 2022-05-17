@@ -1,0 +1,185 @@
+:root {
+    --blue: #1c566c;
+    --light_blue: #55b7de;
+    --green: #d0ffb7;
+}
+
+body {
+    background-color: var(--green);
+    /* font-family: 'Koulen', cursive; */
+    font-family: 'Ubuntu', sans-serif;
+}
+
+main {
+    text-align: center;
+    margin-top: 45px;
+}
+
+h1, h2, h3 {
+    color: var(--blue);
+}
+
+#h3_new_stat {
+    color: white;
+}
+
+ol {
+    border: 3px solid var(--blue);
+    background-color: var(--light_blue);
+}
+
+li {
+    list-style-type: decimal;
+    color: white;
+    font-size: x-large;
+    border-bottom: 2px dashed var(--blue);
+    /* border: 2px solid var(--green); */
+}
+
+#plus_btn, #new_session_btn, #export_btn, #see_results_btn {
+    background: var(--blue);
+    border: 5px solid;
+    color: white;
+    font-size: large;
+    padding: 10px 15px;
+    font-size: large;
+    border-radius: 40px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#see_results_btn {
+    font-size: x-large;
+}
+
+#plus_btn {
+    font-size: xx-large;
+    padding: 15px 25px;
+}
+
+#double {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#checkbox {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#input, #spacing, #tolerance {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#tolerance {
+    margin-left: 31px;
+}
+
+input {
+    height: 30px;
+    font-size: 23px;
+    width: 75px;
+    margin-left: 25px;
+}
+
+#enter_input {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: var(--green);
+    border: 3px solid white;
+    font-size: x-large;
+    color: var(--blue);
+    padding: 15px 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.modal {
+    /* Modal Logic */
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    /* overflow: auto; */
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.8);
+    /* Modal Logic */
+}
+
+.modal_window {
+    text-align: center;
+    border-radius: 45px;
+    /* background-color: rgb(167, 238, 175); */
+    background-color: var(--blue);
+    color: white;
+    border: 5px solid white;
+    width: 90%;
+    margin: auto;
+    margin-top: 30vh;
+}
+
+#myChart {
+    margin: auto;
+    border: 1px solid var(--blue);
+}
+
+hr {
+    height: 3px;
+    background-color: var(--blue);
+    border: none;
+}
+
+#new_stat_hr {
+    height: 1px;
+    background-color: white;
+    border: none;
+}
+
+#yes_no_div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.confirm_btn {
+    background-color: var(--blue);
+    color: var(--light_blue);
+    border: 4px solid white;
+    font-size: x-large;
+    padding: 15px 64px;
+    margin: auto;
+}
+
+#yes_btn {
+    border-radius: 0px 0px 0px 38px;
+}
+
+#no_btn {
+    border-radius: 0px 0px 38px 0px;
+}
+
+#stats, #actions_div {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin-top: 5vh;
+}
+
+.stats_div {
+    border: 3px solid var(--blue);
+    min-width: 100px;
+}
+
+#results_content {
+    display: none;
+}

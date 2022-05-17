@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Ubuntu&display=swap" rel="stylesheet">
+    <title>Spud Spacer</title>
+</head>
+<body>
+    <main>
+        <h1><u>Inputs:</u></h1>
+        <div id="input_container">
+            <ol>
+                <li>8"</li>
+                <li>11"</li>
+                <li>12"</li>
+                <li>11"</li>
+            </ol>
+        </div>
+        <button id="plus_btn">+</button>
+        <div class="modal" id="modal_div">
+            <div class="modal_window" id="enter_data_div">
+                <form id="double">
+                    <label for="checkbox">Double</label>
+                    <input id="checkbox" type="checkbox"></input>
+                </form>
+                <div id="input">
+                    <p>Seed #  </p>
+                    <input type="number">
+                </div>
+                <button id="enter_input">Enter</button>
+            </div>
+        </div>
+        <hr>
+        <h1><u>Goals:</u></h1>
+        <form id="spacing">
+            <label for="spacing"><h2>Ideal Spacing: </h2></label>
+            <input type="number" id="spacing" action="submit" min="1" max="18"></input>
+        </form>
+        <form id="tolerance">
+            <label for="tolerance"><h2>Tolerance: </h2></label>
+            <input type="number" id="tolerance" min="0" max="10">
+        </form>
+        <button id="see_results_btn">See Results</button>
+        <div id="results_content">
+        <hr>
+        <h1><u>Results:</u></h1>
+        <div>
+            <canvas id="myChart" style="width:95%;max-width:700px;"></canvas>
+        </div>
+        <div id="stats">
+        <div class="stats_div">
+            <h3><u>Doubles:</u></h3>
+            <h2>4</h2>
+        </div>
+        <div class="stats_div">
+            <h3><u>Skips:</u></h3>
+            <h2>0</h2>
+        </div>
+        <div class="stats_div">
+            <h3><u>Efficiency:</u></h3>
+            <h2>83%</h2>
+        </div>
+        </div>
+        <div id="actions_div">
+        <button id="export_btn">Export Results</button>
+        <button id="new_session_btn">New Stat Session</button>
+        </div>
+        <div class="modal" id="modal_div2">
+            <div class="modal_window" id="new_stat_div">
+                <h3 id="h3_new_stat">Would you like to begin a new stat session?</h3>
+                <hr id="new_stat_hr">
+                <p>Doing so will delete all current data and cannot be undone.</p>
+                <div id="yes_no_div">
+                    <button id="yes_btn" class="confirm_btn">Yes</button>
+                    <button id="no_btn" class="confirm_btn">No</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="js/script.js"></script>
+      
+</body>
+</html>
