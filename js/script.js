@@ -133,7 +133,7 @@ const displayNumbers = (array) => {
 
   // Register the service Worker
 if ("serviceWorker" in navigator) {
-  window.addEventListener("load", funtion() {
+  window.addEventListener("load", function() {
     navigator.serviceWorker
       .register("/serviceWorker.js")
       .then(res => console.log("service worker registered"))
