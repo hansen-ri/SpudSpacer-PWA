@@ -6,42 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
     <title>Spud Spacer</title>
 </head>
 <body>
     <main>
         <h1><u>Inputs:</u></h1>
         <div id="input_container">
-            <ol>
-                <li>8"</li>
-                <li>11"</li>
-                <li>12"</li>
-                <li>11"</li>
+            <ol id="input_list">
+                <li id="empty_li"></li>
             </ol>
         </div>
         <button id="plus_btn">+</button>
         <div class="modal" id="modal_div">
             <div class="modal_window" id="enter_data_div">
                 <form id="double">
-                    <label for="checkbox">Double</label>
-                    <input id="checkbox" type="checkbox"></input>
+                    <div>
+                    <label for="checkbox1">Double:</label>
+                    <input class="checkbox" id="checkbox1" type="checkbox"></input>
+                    </div>
+                    <div>
+                    <label for="checkbox2">Skip:</label>
+                    <input class="checkbox" id="checkbox2" type="checkbox"></input>
+                    </div>
                 </form>
                 <div id="input">
                     <p>Seed #  </p>
-                    <input type="number">
+                    <input id="li_input" type="number">
                 </div>
-                <button id="enter_input">Enter</button>
+                <button id="enter_input" >Enter</button>
             </div>
         </div>
         <hr>
         <h1><u>Goals:</u></h1>
         <form id="spacing">
             <label for="spacing"><h2>Ideal Spacing: </h2></label>
-            <input type="number" id="spacing" action="submit" min="1" max="18"></input>
+            <select name="spacing" id="spacing">
+                <option value='6'>6"</option>
+                <option value='7'>7"</option>
+                <option value='8'>8"</option>
+                <option value='9'>9"</option>
+                <option value='10'>10"</option>
+                <option value='11'>11"</option>
+                <option value='12' selected>12"</option>
+                <option value='13'>13"</option>
+                <option value='14'>14"</option>
+                <option value='15'>15"</option>
+                <option value='16'>16"</option>
+            </select>
+            <!-- <input type="number" id="spacing" action="submit" min="1" max="18"></input> -->
         </form>
         <form id="tolerance">
             <label for="tolerance"><h2>Tolerance: </h2></label>
-            <input type="number" id="tolerance" min="0" max="10">
+            <select name="tolerance" id="tolerance">
+                <option value='.5'>0.5"</option>
+                <option value='1' selected>1"</option>
+                <option value='1.5'>1.5"</option>
+                <option value='2'>2"</option>
+                <option value='2.5'>2.5"</option>
+                <option value='3'>3"</option>
+                <option value='3.5'>3.5"</option>
+                <option value='4'>4"</option>
+            </select>
         </form>
         <button id="see_results_btn">See Results</button>
         <div id="results_content">

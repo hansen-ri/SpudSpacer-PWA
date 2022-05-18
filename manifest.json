@@ -1,0 +1,10 @@
+{
+    "name": "Spud Spacer",
+    "short_name": "Spud Spacer",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#FFFFFF",
+    "theme_color": "#1c566c",
+    "orientation": "portait-primary"
+
+}
