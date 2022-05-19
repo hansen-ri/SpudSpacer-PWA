@@ -11,6 +11,7 @@ Vanilla Javascript Progressive Web App to aid with potato planting summary compi
 * [Javascript Swipe Input](https://www.delftstack.com/howto/javascript/detect-finger-swipe-events-in-javascript/)
 * [Javscript PWA Basics](https://www.freecodecamp.org/news/build-a-pwa-from-scratch-with-html-css-and-javascript/)
 * [Fireship PWA in 100 Seconds - Youtube](https://www.youtube.com/watch?v=sFsRylCQblw&t=3s)
+* [PWA Icon Generator](https://www.pwabuilder.com/imagegenerator)
 
 ## Drafts
 
