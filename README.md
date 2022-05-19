@@ -17,5 +17,5 @@ Vanilla Javascript Progressive Web App to aid with potato planting summary compi
 
 * [Original Document](/Images/IMG_5475.jpg)
 * [Figma]()
-* [Notebook Sketch](/Images/IMG_6304.jpg)
+* [Notebook Wireframe Sketch](/Images/IMG_6304.jpg)
 
